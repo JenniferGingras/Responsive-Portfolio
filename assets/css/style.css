@@ -1,0 +1,237 @@
+/* the body includes background image and font specs */
+body {
+  background-image: url('dust_scratches.png');
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12pt;
+  line-height: 16pt;
+  margin: 0;
+  padding: 0;
+}
+
+/* the header at the top with name logo and navigation links to other pages */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 30px;
+  border-bottom: #dddddd solid 1px;
+  z-index: 1;
+}
+
+/* the name "logo" */
+h1 {
+  top: 0;
+  margin: 0 0 0 20%;
+  height: 30px;
+  padding: 30px 0 20px 0;
+  width: 250px;
+  background: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Top Navigation */
+nav {
+  float: right;
+  margin: 0 20% 0 0;
+  padding: 30px 0 0 0;
+}
+
+nav a:link {
+  color: #666666
+}
+
+
+nav a:visited {
+  color: #666666
+}
+
+
+nav a:hover {
+  color: #4aaaa5
+}
+
+nav a:active {
+  color: #dddddd
+}
+
+/* the container holds the page title and the content */
+.container {
+  position: relative;
+  top: 110px;
+  margin: auto;
+  width: 60%;
+  padding: 30px;
+  border: #dddddd solid 1px;
+  background: #ffffff;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h2 {
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16pt;
+}
+
+/* the images sit to the left of the container */
+#float {
+  float: left;
+  margin: 10px 20px 10px 0px;
+}
+
+h3 {
+  background-color: #4aaaa5;
+  padding: 10px 0 10px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.project-pics img {
+  width: 100%;
+  max-width: 250px;
+  margin: 1rem;
+}
+
+.bar {
+  position: relative;
+  float: left;
+  margin: 10px;
+}
+
+.bar h3 {
+  width: 100%;
+  position: absolute;
+  bottom: 3rem;
+  margin: 1rem;
+  max-width: 250px;
+  background-color: #4aaaa5;
+  padding: 10px 0 10px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* contact form */
+input {
+  width: 100%;
+  height: 25px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+}
+
+button {
+  background: #4aaaa5;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 12pt;
+}
+
+/* bottom of page, full width, has centered text */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 60px;
+  background-color: #666666;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: 10pt;
+  color: #dddddd;
+  text-align: center;
+  border-top: #4aaaa5 solid 4px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+
+  .container {
+    margin-right: 25%;
+  }
+
+  h1 {
+    margin: 0 0 0 10%;
+  }
+
+  .project-pics img {
+    max-width: 150px;
+  }
+
+  .bar h3 {
+    max-width: 150px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 84%;
+    margin: auto;
+  }
+
+  h1 {
+    margin: 0 0 0 4%;
+  }
+
+  nav {
+    margin: 0 4% 0 0;
+  }
+
+  .project-pics img {
+    max-width: 250px;
+  }
+
+  .bar h3 {
+    max-width: 250px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  h1 {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    height: 10px;
+    padding: 20px 0 30px 0;
+  }
+
+  nav {
+    position: relative;
+    float: none;
+    top: 40px;
+    text-align: center;
+  }
+}
